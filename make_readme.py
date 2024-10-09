@@ -208,7 +208,7 @@ center_freqs = []
 for af in available_files:
     if os.path.islink(af) == False:
         if verbose == True:
-            print('Reading header of {}.'.format(data_file))
+            print('Reading header of {}.'.format(af))
         path, file, ext, size, telescope, observer, project_id, source, mode, MJD, center_freq = parse_data(af)
         n_files += 1
         tot_size += size
